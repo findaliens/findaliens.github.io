@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    background: #065aa1;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+p{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.copyright{
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+}
