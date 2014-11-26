@@ -37,13 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="android.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/android.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.045346063" vertical-offset="0" max-vertical-offset="838">
+            <state vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="152">
               <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/icon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -357,10 +364,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/android.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.045346063" vertical-offset="0" max-vertical-offset="838">
+        <state vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="152">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
