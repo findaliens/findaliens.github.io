@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    text-align:center;
+}
 h1{
     background: #065aa1;
     color: #fff;
