@@ -10,7 +10,7 @@ h1{
     font-size: 18px;
     text-align: center;
 }
-p{
+p,img,video{
     width: 96%;
     margin: 0 auto;
     margin-top: 10px;
