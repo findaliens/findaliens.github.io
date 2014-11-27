@@ -37,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json/list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.054755043" vertical-offset="0" max-vertical-offset="694">
+            <state vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="171">
               <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="android.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json/android.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="152">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.027377522" vertical-offset="0" max-vertical-offset="694">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="ui.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="627">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
               <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding />
             </state>
@@ -99,8 +99,8 @@
         <option value="$PROJECT_DIR$/css/ui.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/news/0.html" />
-        <option value="$PROJECT_DIR$/json/android.json" />
         <option value="$PROJECT_DIR$/json/list.json" />
+        <option value="$PROJECT_DIR$/json/android.json" />
       </list>
     </option>
   </component>
@@ -473,14 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="456">
@@ -508,18 +500,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/android.json">
+    <entry file="file://$PROJECT_DIR$/json/list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="152">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="171">
+          <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/list.json">
+    <entry file="file://$PROJECT_DIR$/css/ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.054755043" vertical-offset="0" max-vertical-offset="694">
-          <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/android.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027377522" vertical-offset="0" max-vertical-offset="694">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>
