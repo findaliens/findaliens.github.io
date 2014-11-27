@@ -40,8 +40,8 @@
       <file leaf-file-name="list.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json/list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08213256" vertical-offset="0" max-vertical-offset="694">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.054755043" vertical-offset="0" max-vertical-offset="694">
+              <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
               <folding />
             </state>
           </provider>
@@ -151,6 +151,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="findaliens.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="findaliens.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="findaliens.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="findaliens.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="findaliens.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appicon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08213256" vertical-offset="0" max-vertical-offset="694">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.054755043" vertical-offset="0" max-vertical-offset="694">
+          <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
           <folding />
         </state>
       </provider>
