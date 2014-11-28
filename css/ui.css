@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    text-align:center;
+}
 h1{
     background: #065aa1;
     color: #fff;
@@ -10,9 +13,8 @@ h1{
     font-size: 18px;
     text-align: center;
 }
-p{
-    width: 96%;
-    margin: 0 auto;
+p,img,video{
+    width: 100%;
     margin-top: 10px;
     font-size: 14px;
     line-height: 25px;
