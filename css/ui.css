@@ -37,9 +37,9 @@ h1{
 }
 .page{
     position: fixed;
-    top: 50px;
-    left: 0px;
-    right: 0px;
+    top: 40px;
+    left: 5px;
+    right:5px;
     bottom: 0px;
     overflow-x: hidden;
     display: none;
@@ -64,6 +64,8 @@ li img{
     width: 100%;
     float: left;
     clear: left;
+    display: block;
+    margin: 0px;
 }
 
 li span{
@@ -100,7 +102,7 @@ p,img,video{
     line-height: 25px;
 }
 #text{
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
 }
