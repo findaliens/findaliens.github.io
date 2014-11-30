@@ -1,7 +1,7 @@
 function getlist(){
     xmlhttp=new XMLHttpRequest();
     xmlhttp.open("GET","http://www.findaliens.com/json/list.json",false);
-    xmlhttp.send();
+    xmlhttp.send(null);
     xmlhttp.onreadystatechange=function(){
         if (xmlhttp.readyState==4){// 4 = "loaded"
             if (xmlhttp.status==200){// 200 = OK
