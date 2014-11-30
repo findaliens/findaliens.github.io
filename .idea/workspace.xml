@@ -27,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="627">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="646">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -57,8 +57,8 @@
       <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68245125" vertical-offset="1068" max-vertical-offset="1843">
-              <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.60306406" vertical-offset="669" max-vertical-offset="1843">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
       <file leaf-file-name="0.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/0.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="209">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="209">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
       <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="266">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="266">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,11 +114,12 @@
       <list>
         <option value="$PROJECT_DIR$/json/list.json.js" />
         <option value="$PROJECT_DIR$/json/android.json" />
-        <option value="$PROJECT_DIR$/news/0.html" />
         <option value="$PROJECT_DIR$/news/bigufo.html" />
         <option value="$PROJECT_DIR$/json/list.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/ui.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/news/0.html" />
+        <option value="$PROJECT_DIR$/news/1.html" />
         <option value="$PROJECT_DIR$/ui.js" />
       </list>
     </option>
@@ -631,26 +632,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="209">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news/bigufo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="266">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="718">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -673,16 +658,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="627">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="646">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="266">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68245125" vertical-offset="1068" max-vertical-offset="1843">
-          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.60306406" vertical-offset="669" max-vertical-offset="1843">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
           <folding />
         </state>
       </provider>

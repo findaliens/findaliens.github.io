@@ -49,7 +49,7 @@ function getnews(id){
         if (xmlhttp.readyState==4){// 4 = "loaded"
             if (xmlhttp.status==200){// 200 = OK
                 document.getElementById("text").innerHTML=xmlhttp.responseText;
-
+                document.title=document.getElementById("text").getElementsByTagName("h1")[0].innerHTML;
                 // ...our code here...
             }else{
                 alert("Problem retrieving XML data");
