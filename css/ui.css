@@ -22,6 +22,7 @@ body{
         left: 42px;
         width: 320px;
         height: 568px;
+        background: #fff;
         overflow: hidden;
     }
 }
