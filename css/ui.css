@@ -31,7 +31,8 @@ h1{
     left: 5px;
     width: 30px;
     height: 30px;
-    background: #fff;
+    background:url(../res/home.png);
+    background-size: 100% 100%;
     display: none;
 }
 .page{
@@ -42,6 +43,13 @@ h1{
     bottom: 0px;
     overflow-x: hidden;
     display: none;
+    text-align: center;
+}
+ul{
+    margin: 0px 0px 50px 0px;
+    width: 100%;
+    float: left;
+    clear: left;
 }
 li{
     position: relative;
@@ -49,17 +57,25 @@ li{
     height: auto;
     margin: 10px 0px 0px 0px;
     list-style: none;
+    float: left;
+    clear: left;
 }
 li img{
     width: 100%;
+    float: left;
+    clear: left;
 }
 
 li span{
-    display:block;
+    display: block;
     width: 100%;
     height: 40px;
     line-height: 40px;
     text-align: center;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
 }
 li p{
     position: absolute;
@@ -82,6 +98,11 @@ p,img,video{
     margin-top: 10px;
     font-size: 14px;
     line-height: 25px;
+}
+#text{
+    width: 96%;
+    margin: 0 auto;
+    text-align: left;
 }
 .copyright{
     position: fixed;
