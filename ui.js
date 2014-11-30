@@ -26,7 +26,8 @@ function getlist(){
                     li.appendChild(span);
 
                     li.onclick=function(){
-                        getnews(this.getAttribute("newsid"));
+                        //getnews(this.getAttribute("newsid"));
+                        window.location.href=app_href+"?id="+this.getAttribute("newsid");
                     }
                     document.getElementById("list").appendChild(li);
                 }
@@ -57,12 +58,17 @@ function getnews(id){
     }
 }
 function init(){
+    app_href=window.location.href;
+    app_href=app_href.split("?")[0];
     if(isNaN(parseInt(query("id")))){
         getlist();
     }else{
         var id=(parseInt(query("id")));
         getnews(id);
+        document.getElementById("home").style.display="block";
     }
+    var img=new Image()
+    img.src="http://img.users.51.la/17472754.asp";
 }
 function all_page_hide(){
     var pages=document.getElementsByClassName("page");
@@ -71,9 +77,10 @@ function all_page_hide(){
     }
 }
 function gohome(){
-    all_page_hide();
-    document.getElementById("text").innerHTML="";
-    getlist();
+    window.location.href=app_href;
+    //all_page_hide();
+    //document.getElementById("text").innerHTML="";
+    //getlist();
 }
 function query(name){
     var result = location.search.match(new RegExp("[\?\&]" + name+ "=([^\&]+)","i"));
