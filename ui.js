@@ -1,10 +1,10 @@
+app_url="http://www.findaliens.com";
 function getlist(){
     xmlhttp=new XMLHttpRequest();
-    //xmlhttp.open("GET","http://www.findaliens.com/json/list.json",true);
     all_page_hide();
     document.getElementById("list").innerHTML="";
     document.getElementById("list_page").style.display="block";
-    xmlhttp.open("GET","json/list.json",true);
+    xmlhttp.open("GET",app_url+"/json/list.json",true);
     xmlhttp.send(null);
     xmlhttp.onreadystatechange=function(){
         if (xmlhttp.readyState==4){// 4 = "loaded"
@@ -39,7 +39,7 @@ function getlist(){
                     }
                     li.onclick=function(){
                         //getnews(this.getAttribute("newsid"));
-                        window.location.href=app_href+"?id="+this.getAttribute("newsid");
+                        window.location.href=app_url+"?id="+this.getAttribute("newsid");
                     }
                     document.getElementById("list").appendChild(li);
                 }
@@ -54,8 +54,7 @@ function getnews(id){
     all_page_hide();
     document.getElementById("news_page").style.display="block";
     xmlhttp=new XMLHttpRequest();
-    //xmlhttp.open("GET","http://www.findaliens.com/json/list.json",true);
-    xmlhttp.open("GET","news/"+id+".html",true);
+    xmlhttp.open("GET",app_url+"/news/"+id+".html",true);
     xmlhttp.send(null);
     xmlhttp.onreadystatechange=function(){
         if (xmlhttp.readyState==4){// 4 = "loaded"
