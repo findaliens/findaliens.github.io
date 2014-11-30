@@ -25,6 +25,13 @@ function getlist(){
                     li.appendChild(img);
                     li.appendChild(span);
 
+                    if(arr[i].type=="video"){
+                        var player_icon_pan=document.createElement("p");
+
+                        var player_icon=document.createElement("b");
+                        player_icon_pan.appendChild(player_icon);
+                        li.appendChild(player_icon_pan);
+                    }
                     li.onclick=function(){
                         //getnews(this.getAttribute("newsid"));
                         window.location.href=app_href+"?id="+this.getAttribute("newsid");
