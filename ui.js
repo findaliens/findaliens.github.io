@@ -1,7 +1,8 @@
-function getlist(){
+function getlist(){S
     xmlhttp=new XMLHttpRequest();
     //xmlhttp.open("GET","http://www.findaliens.com/json/list.json",true);
     all_page_hide();
+    document.getElementById("list").innerHTML="";
     document.getElementById("list_page").style.display="block";
     xmlhttp.open("GET","json/list.json",true);
     xmlhttp.send(null);
