@@ -55,6 +55,8 @@ li{
     position: relative;
     width: 100%;
     height: auto;
+    min-height: 100px;
+    background: url(../res/news_icon.png);
     margin: 10px 0px 0px 0px;
     list-style: none;
     float: left;

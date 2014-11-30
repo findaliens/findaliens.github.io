@@ -17,6 +17,11 @@ function getlist(){
                     var span=document.createElement("span");
 
                     img.src=arr[i].icon;
+                    img.style.display="none";
+                    img.onload=function(){
+                        this.style.display="block";
+                    }
+                    //arr[i].icon;
                     span.innerHTML=arr[i].title;
 
                     li.setAttribute("title",arr[i].title);
