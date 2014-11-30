@@ -1,4 +1,4 @@
-function getlist(){S
+function getlist(){
     xmlhttp=new XMLHttpRequest();
     //xmlhttp.open("GET","http://www.findaliens.com/json/list.json",true);
     all_page_hide();
