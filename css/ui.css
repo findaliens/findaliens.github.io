@@ -5,6 +5,26 @@
 body{
     text-align:center;
 }
+@media screen and (min-width: 960px) {
+    #mobile_pan{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 400px;
+        height: 820px;
+        background: url(../res/iphone.png);
+        background-size: 100%;
+        overflow: hidden;
+    }
+    #mobile{
+        position: absolute;
+        top: 128px;
+        left: 42px;
+        width: 320px;
+        height: 568px;
+        overflow: hidden;
+    }
+}
 h1{
     color: #065aa1;
     height: 50px;
@@ -13,7 +33,7 @@ h1{
     text-align: center;
 }
 #topbar{
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -36,7 +56,7 @@ h1{
     display: none;
 }
 .page{
-    position: fixed;
+    position: absolute;
     top: 40px;
     left: 5px;
     right:5px;
@@ -109,7 +129,7 @@ p,img,video{
     text-align: left;
 }
 .copyright{
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     width:100%;
     height: 30px;
