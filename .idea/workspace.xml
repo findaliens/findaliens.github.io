@@ -24,21 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json/list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="190">
-              <caret line="3" column="145" selection-start-line="3" selection-start-column="145" selection-end-line="3" selection-end-column="145" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news/2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08213256" vertical-offset="0" max-vertical-offset="694">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.027377522" vertical-offset="0" max-vertical-offset="694">
+              <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -61,8 +51,9 @@
         <option value="$PROJECT_DIR$/css/ui.css" />
         <option value="$PROJECT_DIR$/ui.js" />
         <option value="$PROJECT_DIR$/news/superbigufo.html" />
-        <option value="$PROJECT_DIR$/json/list.json" />
         <option value="$PROJECT_DIR$/news/2.html" />
+        <option value="$PROJECT_DIR$/news/5.html" />
+        <option value="$PROJECT_DIR$/json/list.json" />
       </list>
     </option>
   </component>
@@ -237,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="154" y="175" width="1639" height="856" extended-state="0" />
+    <frame x="154" y="175" width="1639" height="856" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -612,18 +603,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/list.json">
+    <entry file="file://$PROJECT_DIR$/news/5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="190">
-          <caret line="3" column="145" selection-start-line="3" selection-start-column="145" selection-end-line="3" selection-end-column="145" />
+        <state vertical-scroll-proportion="0.08213256" vertical-offset="0" max-vertical-offset="694">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08213256" vertical-offset="0" max-vertical-offset="694">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.21902017" vertical-offset="0" max-vertical-offset="694">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027377522" vertical-offset="0" max-vertical-offset="694">
+          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
           <folding />
         </state>
       </provider>
