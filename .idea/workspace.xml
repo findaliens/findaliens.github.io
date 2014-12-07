@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json/list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="1064">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.055072464" vertical-offset="0" max-vertical-offset="1064">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="8.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="8.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16521738" vertical-offset="0" max-vertical-offset="690">
+            <state vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="266">
               <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding />
             </state>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/news/5.html" />
         <option value="$PROJECT_DIR$/news/6.html" />
         <option value="$PROJECT_DIR$/news/7.html" />
-        <option value="$PROJECT_DIR$/json/list.json" />
         <option value="$PROJECT_DIR$/news/8.html" />
+        <option value="$PROJECT_DIR$/json/list.json" />
       </list>
     </option>
   </component>
@@ -667,18 +667,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/list.json">
+    <entry file="file://$PROJECT_DIR$/news/8.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="1064">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="24" />
+        <state vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="266">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/8.html">
+    <entry file="file://$PROJECT_DIR$/json/list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16521738" vertical-offset="0" max-vertical-offset="690">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.055072464" vertical-offset="0" max-vertical-offset="1064">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
