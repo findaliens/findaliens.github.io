@@ -1,6 +1,13 @@
 [
   {
     "type": "video",
+    "title": "猎户座发射的录像",
+    "icon": "http://www.findaliens.com/listicons/LiftoffofOrion.jpg",
+    "newsid": 6,
+    "link": "http://www.findaliens.com/news/7.html"
+  },
+  {
+    "type": "video",
     "title": "猎户座返回地球的录像",
     "icon": "http://www.findaliens.com/listicons/orion.jpg",
     "newsid": 6,
