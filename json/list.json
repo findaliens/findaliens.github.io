@@ -1,6 +1,51 @@
 [
-  {"type":"video","title":"美国人为什么不敢登月了","icon":"http://www.findaliens.com/listicons/5.jpg","newsid":5,"link":"http://www.findaliens.com/news/5.html"},
-  {"type":"video","title":"难以置信的超大UFO","icon":"http://www.findaliens.com/listicons/superbigufo.jpg","newsid":2,"link":"http://www.findaliens.com/news/2.html"},
-  {"type":"pic","title":"NASA:20年后找到外星人","icon":"http://www.findaliens.com/listicons/0.png","newsid":0,"link":"http://www.findaliens.com/news/0.html"},
-  {"type":"video","title":"超级巨大的UFO！","icon":"http://www.findaliens.com/listicons/bigufo.png","newsid":1,"link":"http://www.findaliens.com/news/1.html"}
+  {
+    "type": "pic",
+    "title": "火星上发现一个新渠道",
+    "icon": "http://www.findaliens.com/listicons/ANewGullyChannel.jpg",
+    "newsid": 8,
+    "link": "http://www.findaliens.com/news/8.html"
+  },
+  {
+    "type": "video",
+    "title": "猎户座发射的录像",
+    "icon": "http://www.findaliens.com/listicons/LiftoffofOrion.jpg",
+    "newsid": 7,
+    "link": "http://www.findaliens.com/news/7.html"
+  },
+  {
+    "type": "video",
+    "title": "猎户座返回地球的录像",
+    "icon": "http://www.findaliens.com/listicons/orion.jpg",
+    "newsid": 6,
+    "link": "http://www.findaliens.com/news/6.html"
+  },
+  {
+    "type": "video",
+    "title": "美国人为什么不敢登月了",
+    "icon": "http://www.findaliens.com/listicons/5.jpg",
+    "newsid": 5,
+    "link": "http://www.findaliens.com/news/5.html"
+  },
+  {
+    "type": "video",
+    "title": "难以置信的超大UFO",
+    "icon": "http://www.findaliens.com/listicons/superbigufo.jpg",
+    "newsid": 2,
+    "link": "http://www.findaliens.com/news/2.html"
+  },
+  {
+    "type": "pic",
+    "title": "NASA:20年后找到外星人",
+    "icon": "http://www.findaliens.com/listicons/0.png",
+    "newsid": 0,
+    "link": "http://www.findaliens.com/news/0.html"
+  },
+  {
+    "type": "video",
+    "title": "超级巨大的UFO！",
+    "icon": "http://www.findaliens.com/listicons/bigufo.png",
+    "newsid": 1,
+    "link": "http://www.findaliens.com/news/1.html"
+  }
 ]
