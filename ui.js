@@ -69,6 +69,43 @@ function getnews(id){
     }
 }
 function init(){
+    //
+    var appCache = window.applicationCache;
+
+    function logEvent(e) {
+
+        console.log(e);
+
+    }
+
+    function logError(e) {
+
+        console.log("error " + e);
+
+    };
+
+    appCache.addEventListener('cached', logEvent, false);
+
+    appCache.addEventListener('checking', logEvent, false);
+
+    appCache.addEventListener('downloading', logEvent, false);
+
+    appCache.addEventListener('error', logError, false);
+
+    appCache.addEventListener('noupdate', logEvent, false);
+
+    appCache.addEventListener('obsolete', logEvent, false);
+
+    appCache.addEventListener('progress', logEvent, false);
+
+    appCache.addEventListener('updateready', function (e) {
+
+        appCache.swapCache();
+
+        window.location.reload();
+
+    }, false);
+    //
     app_href=window.location.href;
     app_href=app_href.split("?")[0];
     if(isNaN(parseInt(query("id")))){
