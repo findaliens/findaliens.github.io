@@ -74,21 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="11.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/11.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11390887" vertical-offset="0" max-vertical-offset="834">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="209">
+              <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json/list.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="1463">
-              <caret line="3" column="71" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0911271" vertical-offset="0" max-vertical-offset="1463">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/offline.appcache" />
         <option value="$PROJECT_DIR$/css/ui.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/json/list.json" />
         <option value="$PROJECT_DIR$/news/11.html" />
+        <option value="$PROJECT_DIR$/json/list.json" />
       </list>
     </option>
   </component>
@@ -698,18 +698,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/list.json">
+    <entry file="file://$PROJECT_DIR$/news/11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="1463">
-          <caret line="3" column="71" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="71" />
+        <state vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="209">
+          <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/11.html">
+    <entry file="file://$PROJECT_DIR$/json/list.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11390887" vertical-offset="0" max-vertical-offset="834">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0911271" vertical-offset="0" max-vertical-offset="1463">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
           <folding />
         </state>
       </provider>
