@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>2GCF| UI</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <style>
+        .list{
+            border: 1px solid #C6C6C6;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: left;
+            font-size: 14px;
+            line-height: 24px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -moz-box-shadow: 0 1px 1px #f6f6f6;
+            -webkit-box-shadow: 0 1px 1px #f6f6f6;
+            box-shadow: 0 1px 1px #f6f6f6;
+            margin-bottom: 11px;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+        ul.list li{
+            border: solid #C6C6C6;
+            border-width: 0 0 1px 0;
+            padding: 0px 10px 0 10px;
+            list-style: none;
+        }
+        ul.list li:last-of-type {
+            border-width: 0;
+        }
+        ul.list li a{
+            line-height: 22px;
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        ul.list li span {
+            display: block;
+            background: url("uiicons/arrow3.png") no-repeat right 50%;
+            -webkit-background-size: 8.5px 13px;
+            background-size: 8.5px 13px;
+            padding: 10px 20px 9px 0;
+            position: relative;
+            font-size: 16px;
+            min-height: 22px;
+        }
+        ul.list li.tel {
+            background: url("uiicons/tel.png") no-repeat scroll 11px 13px transparent;
+            background-size: 15px 15px;
+            line-height: 22px;
+            padding-left: 34px;
+        }
+        ul.list li.address {
+            background: url("uiicons/addr.png") no-repeat scroll 11px center / 22px 22px rgba(0, 0, 0, 0);
+            line-height: 22px;
+            padding-left: 40px;
+        }
+        ul.list li.detail {
+            background: url("uiicons/detail.png") no-repeat scroll 10px 13px transparent;
+            background-size: 15px 15px;
+            line-height: 22px;
+            padding-left: 34px;
+            -webkit-border-radius: 0 0 5px 5px;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li class="tel">
+            <a href="tel:10010">
+                <span>10010</span>
+            </a>
+        </li>
+        <li class="address">
+            <a href="">
+                <span>地址</span>
+            </a>
+        </li>
+        <li class="detail">
+            <a href="">
+                <span>查看详情</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

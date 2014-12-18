@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #game_pan,#game_over_pan{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ccc;
+            display: none;
+        }
+        #game_over_pan{
+            background: #000;
+            text-align: center;
+        }
+        #game_box{
+            position: relative;
+            width:300px;
+            height:300px;
+            background: #f00;
+            margin: 30px auto;
+        }
+        #myCanvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;bottom: 0;
+            width: 300px;
+            height: 300px;
+            background: #ccc;
+        }
+        #icons{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;bottom: 0;
+            width: 300px;
+            height: 300px;
+        }
+        #nexts{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;bottom: 0;
+            width: 300px;
+            height: 300px;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            background: #179F00;
+            border-radius: 50px;
+            position: absolute;
+            cursor: pointer;
+            border: #fff solid 2px;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height:50px;
+            color: #fff;
+            font-size: 22px;
+        }
+        .icon_select{
+            width:50px;
+            height:50px;
+            background: #179F00;
+            border-radius: 50px;
+            position: absolute;
+            cursor: pointer;
+            border: #f00 solid 2px;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height:50px;
+            color: #fff;
+            font-size: 22px;
+        }
+        .icon_over{
+            display: none;
+        }
+        #icon_1{
+            top: 11.5px;
+            left:11.5px;
+        }
+        #icon_2{
+            top: 11.5px;
+            left: 87.5px;
+        }
+        #icon_3{
+            top: 11.5px;
+            left: 161.5px;
+        }
+        #icon_4{
+            top: 11.5px;
+            left:231.5px;
+        }
+        #icon_5{
+            top: 87.5px;
+            left:11.5px;
+        }
+        #icon_6{
+            top: 87.5px;
+            left: 87.5px;
+        }
+        #icon_7{
+            top: 87.5px;
+            left: 161.5px;
+        }
+        #icon_8{
+            top: 87.5px;
+            left:231.5px;
+        }
+        #icon_9{
+            top: 161.5px;
+            left:11.5px;
+        }
+        #icon_10{
+            top: 161.5px;
+            left: 87.5px;
+        }
+        #icon_11{
+            top: 161.5px;
+            left: 161.5px;
+        }
+        #icon_12{
+            top: 161.5px;
+            left:231.5px;
+        }
+        #icon_13{
+            top: 231.5px;
+            left:11.5px;
+        }
+        #icon_14{
+            top: 231.5px;
+            left: 87.5px;
+        }
+        #icon_15{
+            top: 231.5px;
+            left: 161.5px;
+        }
+        #icon_16{
+            top: 231.5px;
+            left:231.5px;
+        }
+        /**/
+        .next{
+            width: 50px;
+            height: 50px;
+            background: #179F00;
+            border-radius: 50px;
+            position: absolute;
+            cursor: pointer;
+            border: #fff solid 2px;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height:50px;
+            color: #fff;
+            font-size: 22px;
+            background-image: url(icons/lock.png);
+        }
+        .next_unlock{
+            width: 50px;
+            height: 50px;
+            background: #179F00;
+            border-radius: 50px;
+            position: absolute;
+            cursor: pointer;
+            border: #fff solid 2px;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height:50px;
+            color: #fff;
+            font-size: 22px;
+            background: none;
+        }
+        .next_select{
+            width:50px;
+            height:50px;
+            background: #179F00;
+            border-radius: 50px;
+            position: absolute;
+            cursor: pointer;
+            border: #f00 solid 2px;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height:50px;
+            color: #fff;
+            font-size: 22px;
+        }
+        #next_1{
+            top: 11.5px;
+            left:11.5px;
+
+        }
+        #next_2{
+            top: 11.5px;
+            left: 87.5px;
+        }
+        #next_3{
+            top: 11.5px;
+            left: 161.5px;
+        }
+        #next_4{
+            top: 11.5px;
+            left:231.5px;
+        }
+        #next_5{
+            top: 87.5px;
+            left:11.5px;
+        }
+        #next_6{
+            top: 87.5px;
+            left: 87.5px;
+        }
+        #next_7{
+            top: 87.5px;
+            left: 161.5px;
+        }
+        #next_8{
+            top: 87.5px;
+            left:231.5px;
+        }
+        #next_9{
+            top: 161.5px;
+            left:11.5px;
+        }
+        #next_10{
+            top: 161.5px;
+            left: 87.5px;
+        }
+        #next_11{
+            top: 161.5px;
+            left: 161.5px;
+        }
+        #next_12{
+            top: 161.5px;
+            left:231.5px;
+        }
+        #next_13{
+            top: 231.5px;
+            left:11.5px;
+        }
+        #next_14{
+            top: 231.5px;
+            left: 87.5px;
+        }
+        #next_15{
+            top: 231.5px;
+            left: 161.5px;
+        }
+        #next_16{
+            top: 231.5px;
+            left:231.5px;
+        }
+        #topbar{
+            width: 100%;
+            height: 50px;
+        }
+        h2{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        #time{
+            width: 0%;
+            height: 20px;
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game_pan">
+        <div id="topbar">
+            <h2 id="title">15年最火的算数游戏</h2>
+            <div id="time"></div>
+        </div>
+        <div id="game_box">
+            <canvas id="myCanvas"></canvas>
+            <div id="icons">
+                <div class="icon" id="icon_1" ontouchstart="tap(1)"></div>
+                <div class="icon" id="icon_2" ontouchstart="tap(2)"></div>
+                <div class="icon" id="icon_3" ontouchstart="tap(3)"></div>
+                <div class="icon" id="icon_4" ontouchstart="tap(4)"></div>
+                <div class="icon" id="icon_5" ontouchstart="tap(5)"></div>
+                <div class="icon" id="icon_6" ontouchstart="tap(6)"></div>
+                <div class="icon" id="icon_7" ontouchstart="tap(7)"></div>
+                <div class="icon" id="icon_8" ontouchstart="tap(8)"></div>
+                <div class="icon" id="icon_9" ontouchstart="tap(9)"></div>
+                <div class="icon" id="icon_10" ontouchstart="tap(10)"></div>
+                <div class="icon" id="icon_11" ontouchstart="tap(11)"></div>
+                <div class="icon" id="icon_12" ontouchstart="tap(12)"></div>
+                <div class="icon" id="icon_13" ontouchstart="tap(13)"></div>
+                <div class="icon" id="icon_14" ontouchstart="tap(14)"></div>
+                <div class="icon" id="icon_15" ontouchstart="tap(15)"></div>
+                <div class="icon" id="icon_16" ontouchstart="tap(16)"></div>
+            </div>
+            <div id="nexts">
+                <div class="next" id="next_1" ontouchstart="next(1)"></div>
+                <div class="next" id="next_2" ontouchstart="next(2)"></div>
+                <div class="next" id="next_3" ontouchstart="next(3)"></div>
+                <div class="next" id="next_4" ontouchstart="next(4)"></div>
+                <div class="next" id="next_5" ontouchstart="next(5)"></div>
+                <div class="next" id="next_6" ontouchstart="next(6)"></div>
+                <div class="next" id="next_7" ontouchstart="next(7)"></div>
+                <div class="next" id="next_8" ontouchstart="next(8)"></div>
+                <div class="next" id="next_9" ontouchstart="next(9)"></div>
+                <div class="next" id="next_10" ontouchstart="next(10)"></div>
+                <div class="next" id="next_11" ontouchstart="next(11)"></div>
+                <div class="next" id="next_12" ontouchstart="next(12)"></div>
+                <div class="next" id="next_13" ontouchstart="next(13)"></div>
+                <div class="next" id="next_14" ontouchstart="next(14)"></div>
+                <div class="next" id="next_15" ontouchstart="next(15)"></div>
+                <div class="next" id="next_16" ontouchstart="next(16)"></div>
+            </div>
+        </div>
+    </div>
+    <div id="game_over_pan"><img src="gameover.jpg" width="100%"></div>
+    <script>
+
+        next_value=1;//guanka
+
+        num=0;
+
+        var width=document.body.scrollWidth;
+        var height=document.body.scrollHeight;
+        document.querySelector("#game_pan").style.display="block";
+
+
+        var canvas=document.getElementById('myCanvas');
+        canvas.width=300;
+        canvas.height=300;
+        var c=canvas.getContext('2d');
+        /*
+        c.lineWidth =1;
+        c.beginPath();
+        c.moveTo(50, 50);
+        c.lineTo(50,100);
+        c.lineTo(150,100);
+        c.lineTo(150,50);
+        c.strokeStyle = "rgba(255,0,0,1)";
+        c.stroke();
+        */
+
+
+        function line(from,to){
+            c.lineWidth =2;
+            c.beginPath();
+            c.moveTo(from.x,from.y);
+            //
+            c.lineTo(from.x+35.5,from.y);
+
+            c.lineTo(from.x+35.5,to.y-35.5);
+
+            c.lineTo(to.x,to.y-35.5);
+            //
+            c.lineTo(to.x,to.y);
+            c.strokeStyle = "rgba(255,0,0,1)";
+            c.stroke();
+        }
+
+        c.clearRect(0,0,300,300);
+
+        point(37.5,37.5);
+        point(37.5*3,37.5);
+        point(37.5*5,37.5);
+        point(37.5*7,37.5);
+
+        point(37.5,37.5*3);
+        point(37.5*3,37.5*3);
+        point(37.5*5,37.5*3);
+        point(37.5*7,37.5*3);
+
+        point(37.5,37.5*5);
+        point(37.5*3,37.5*5);
+        point(37.5*5,37.5*5);
+        point(37.5*7,37.5*5);
+
+        point(37.5,37.5*7);
+        point(37.5*3,37.5*7);
+        point(37.5*5,37.5*7);
+        point(37.5*7,37.5*7);
+        //
+        //ctx.fillStyle='#FF0000';
+        //ctx.fillRect(0,0,80,100);
+        function point(x,y){
+            c.fillStyle="#FF0000";
+            c.beginPath();
+            c.arc(x,y,20,0,Math.PI*2,true);
+            c.closePath();
+            c.fill();
+        }
+        function lineto(from,to){
+            var pointarr=[
+                {},
+                {"x":37.5,"y":37.5},
+                {"x":37.5*3,"y":37.5},
+                {"x":37.5*5,"y":37.5},
+                {"x":37.5*7,"y":37.5},
+                    //
+                {"x":37.5,"y":37.5*3},
+                {"x":37.5*3,"y":37.5*3},
+                {"x":37.5*5,"y":37.5*3},
+                {"x":37.5*7,"y":37.5*3},
+                    //
+                {"x":37.5,"y":37.5*5},
+                {"x":37.5*3,"y":37.5*5},
+                {"x":37.5*5,"y":37.5*5},
+                {"x":37.5*7,"y":37.5*5},
+                    //
+                {"x":37.5,"y":37.5*7},
+                {"x":37.5*3,"y":37.5*7},
+                {"x":37.5*5,"y":37.5*7},
+                {"x":37.5*7,"y":37.5*7}
+            ];
+            line(pointarr[from],pointarr[to]);
+        }
+
+        function check_1(value_1,value_2){
+            if(value_1+value_2==15){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        function check_2(value_1,value_2){
+            if(value_1-value_2==15){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        function tap(i){
+            num++;
+            if(num==1){
+                select_1=i;
+                document.querySelector("#icon_"+i).setAttribute("class","icon_select");
+            }
+            if(num==2){
+                if(select_1==i){
+                    select_1=0;
+                    num=0;
+                    document.querySelector("#icon_"+i).setAttribute("class","icon");
+                }else{
+                    select_2=i;
+                    document.querySelector("#icon_"+i).setAttribute("class","icon_select");
+                    value_1=document.querySelector("#icon_"+select_1).getAttribute("value");
+                    value_2=document.querySelector("#icon_"+select_2).getAttribute("value");
+                    value_1=parseInt(value_1);
+                    value_2=parseInt(value_2);
+
+                    if(check(value_1,value_2)){
+                        lineto(select_1,select_2);
+                        setTimeout(function(){
+                            document.querySelector("#icon_"+select_1).setAttribute("class","icon_over");
+                            document.querySelector("#icon_"+select_2).setAttribute("class","icon_over");
+                            c.clearRect(0,0,300,300);
+                            num=0;
+                            win++;
+                            if(win==8){
+                                youwin();
+                            }
+                        },80);
+                    }else{
+                        gameover();
+                    }
+                }
+            }
+        }
+
+        function next1(){
+            win=0;
+            document.querySelector("#title").innerHTML="相加等于15";
+            check=check_1;
+            num=0;
+            select_1=0;
+            select_2=0;
+            var arr=[
+                [0,0],
+                [1,1],
+                [2,2],
+                [3,3],
+                [4,4],
+                [5,5],
+                [6,6],
+                [7,7],
+                [8,8],
+                [9,9],
+                [10,10],
+                [11,11],
+                [12,12],
+                [13,13],
+                [14,14],
+                [15,15]
+            ];
+            arr=arr.sort(function(){
+                return Math.random() > 0.5 ? -1 : 1;
+            });
+            for(i=0;i<arr.length;i++){
+                console.log(i)
+                document.querySelector("#icon_"+(i+1)).innerHTML=arr[i][0];
+                document.querySelector("#icon_"+(i+1)).setAttribute("value",arr[i][1]);
+                document.querySelector("#icon_"+(i+1)).setAttribute("class","icon");
+            }
+            timeall=2000;
+            timevalue=timeall;
+            timer=setInterval(function(){
+                timevalue--;
+                document.querySelector("#time").style.width=(timevalue/timeall)*100+"%";
+                if(timevalue==0){
+                    gameover();
+                }
+            },10);
+        }
+
+
+
+        function next2(){
+            win=0;
+            document.querySelector("#title").innerHTML="相减等于15";
+            check=check_2;
+            num=0;
+            select_1=0;
+            select_2=0;
+            var arr=[
+                [15,15],
+                [0,0],
+                [16,16],
+                [1,1],
+                [17,17],
+                [2,2],
+                [18,18],
+                [3,3],
+                [19,19],
+                [4,4],
+                [20,20],
+                [5,5],
+                [21,21],
+                [6,6],
+                [22,22],
+                [7,7]
+            ];
+            arr=arr.sort(function(){
+                return Math.random() > 0.5 ? -1 : 1;
+            });
+            for(i=0;i<arr.length;i++){
+                console.log(i)
+                document.querySelector("#icon_"+(i+1)).innerHTML=arr[i][0];
+                document.querySelector("#icon_"+(i+1)).setAttribute("value",arr[i][1]);
+                document.querySelector("#icon_"+(i+1)).setAttribute("class","icon");
+            }
+            timeall=2000;
+            timevalue=timeall;
+            timer=setInterval(function(){
+                timevalue--;
+                document.querySelector("#time").style.width=(timevalue/timeall)*100+"%";
+                if(timevalue==0){
+                    gameover();
+                }
+            },10);
+        }
+
+        function youwin(){
+            alert("you win");
+            clearInterval(timer);
+            next_value++;
+            unlocks.push(next_value);
+            next(next_value);
+        }
+        function gameover(){
+            alert("game0ver");
+            clearInterval(timer);
+        }
+        unlocks=new Array();
+        unlocks.push(1);
+        function next(i){
+            var isUnlock=false
+            for(ii=0;ii<unlocks.length;ii++){
+                if(i==unlocks[ii]){
+                    //
+                    isUnlock=true;
+                    //
+                    break;
+                }
+            }
+            if(isUnlock){
+                if(i==1){
+                    next_value=i;
+                    next1();
+                    document.querySelector("#nexts").style.display="none";
+                }
+                if(i==2){
+                    next_value=i;
+                    next2();
+                    document.querySelector("#nexts").style.display="none";
+                }
+            }else{
+                alert("此关卡尚未解锁或正在开发中，敬请期待。")
+            }
+        }
+        //next1();
+        document.querySelector("#next_1").innerHTML=1;
+        document.querySelector("#next_1").setAttribute("class","next_unlock");
+    </script>
+    <div style="display: none;"></div>
+</body>
+</html>

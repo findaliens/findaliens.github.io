@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>以色列8岁少年写的游戏，据说只有2%的人才能赢。</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #game_pan,#game_over_pan{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ccc;
+            display: none;
+        }
+        #game_over_pan{
+            background: #000;
+        }
+        #game_box{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .block{
+            position: absolute;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 900;
+            /*
+            border: solid #f00 1px;
+            margin: -1px;
+            */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="game_pan">
+        <div id="game_box"></div>
+    </div>
+    <div id="game_over_pan"><img src="gameover.jpg" width="100%"></div>
+    <script>
+        var width=document.body.scrollWidth;
+        var height=document.body.scrollHeight;
+        var blocks_x=5;
+        var blocks_y=0;
+        var block_width=width/blocks_x;
+        blocks_y=height/block_width;
+        blocks_y+="";
+        blocks_y=blocks_y.split(".")[0];
+        blocks_y=parseInt(blocks_y)+1;
+        var blocks=blocks_x*blocks_y;
+        var all=0;
+        var speed=500;
+        for(i=0;i<blocks_y;i++){
+            for(ii=0;ii<blocks_x;ii++) {
+                all++;
+                var b = document.createElement("div");
+                b.setAttribute("class", "block");
+                b.style.width = block_width + "px";
+                b.style.height = block_width + "px";
+                b.style.lineHeight = block_width + "px";
+                b.style.textAlign="center";
+                b.style.bottom=(i)*block_width+"px";
+                b.style.left=(ii)*block_width+"px";
+                //b.innerHTML=all;
+                b.setAttribute("id","b_"+all);
+                document.querySelector("#game_box").appendChild(b);
+            }
+        }
+        var ats=new Array();
+        for(i=0;i<blocks_x;i++){
+            ats.push(all-i);
+        }
+        var at=0;
+        var num=0;
+        var num_arr=[2,4,8,16,32,64,128,256,512,1024,2048];
+        function gamestart(){
+
+            document.querySelector("#game_pan").style.display="block";
+            document.querySelector("#game_over_pan").style.display="none";
+            next();
+        }
+        function gameover(){
+            document.querySelector("#game_over_pan").style.display="block";
+        }
+        function left(){
+            at-=1;
+            if(at>=1){
+                if(document.querySelector("#b_"+at).innerHTML.length==0){
+                    //no block
+                    parseInt(document.querySelector("#b_"+at).innerHTML)
+                    document.querySelector("#b_"+at).style.background="#f00";
+                    document.querySelector("#b_"+at).innerHTML=num;
+                    //
+                    document.querySelector("#b_"+(at+1)).style.background="none";
+                    document.querySelector("#b_"+(at+1)).innerHTML="";
+
+                }else{
+                    //has block
+                    target=parseInt(document.querySelector("#b_"+at).innerHTML);
+                    if(num==target){
+                        parseInt(document.querySelector("#b_"+at).innerHTML)
+                        document.querySelector("#b_"+at).style.background="#f00";
+
+                        num+=target;
+                        document.querySelector("#b_"+at).innerHTML=num;
+                        //
+                        document.querySelector("#b_"+(at+1)).style.background="none";
+                        document.querySelector("#b_"+(at+1)).innerHTML="";
+
+                    }
+                }
+            }
+        }
+        function right(){
+            at+=1;
+            if(at>=1){
+                if(document.querySelector("#b_"+at).innerHTML.length==0){
+                    //no block
+                    parseInt(document.querySelector("#b_"+at).innerHTML)
+                    document.querySelector("#b_"+at).style.background="#f00";
+                    document.querySelector("#b_"+at).innerHTML=num;
+                    //
+                    document.querySelector("#b_"+(at-1)).style.background="none";
+                    document.querySelector("#b_"+(at-1)).innerHTML="";
+
+                }else{
+                    //has block
+                    target=parseInt(document.querySelector("#b_"+at).innerHTML);
+                    if(num==target){
+                        parseInt(document.querySelector("#b_"+at).innerHTML)
+                        document.querySelector("#b_"+at).style.background="#f00";
+
+                        num+=target;
+                        document.querySelector("#b_"+at).innerHTML=num;
+                        //
+                        document.querySelector("#b_"+(at-1)).style.background="none";
+                        document.querySelector("#b_"+(at-1)).innerHTML="";
+
+                    }
+                }
+            }
+        }
+        function next(){
+            //at=ats[Math.floor(Math.random()*blocks_x)];
+            blocks_x
+            at=ats[Math.floor(ats.length/2)];
+            num=num_arr[Math.floor(Math.random()*num_arr.length)];
+            document.querySelector("#b_"+at).style.background="#f00";
+            document.querySelector("#b_"+at).innerHTML=num;
+            function down(){
+                at-=blocks_x;
+                if(at>=1){
+                    if(document.querySelector("#b_"+at).innerHTML.length==0){
+                        //no block
+                        parseInt(document.querySelector("#b_"+at).innerHTML)
+                        document.querySelector("#b_"+at).style.background="#f00";
+                        document.querySelector("#b_"+at).innerHTML=num;
+                        //
+                        document.querySelector("#b_"+(at+blocks_x)).style.background="none";
+                        document.querySelector("#b_"+(at+blocks_x)).innerHTML="";
+                        setTimeout(down,speed);
+                    }else{
+                        //has block
+                        target=parseInt(document.querySelector("#b_"+at).innerHTML);
+                        if(num==target){
+                            parseInt(document.querySelector("#b_"+at).innerHTML)
+                            document.querySelector("#b_"+at).style.background="#f00";
+
+                            num+=target;
+                            document.querySelector("#b_"+at).innerHTML=num;
+                            //
+                            document.querySelector("#b_"+(at+blocks_x)).style.background="none";
+                            document.querySelector("#b_"+(at+blocks_x)).innerHTML="";
+                            setTimeout(down,speed);
+                        }else{
+                            if(at>all-blocks_x-blocks_x){
+                                gameover();
+                            }else{
+                                next();
+                            }
+                        }
+                    }
+
+                }else{
+                    next();
+                }
+            }
+            setTimeout(down,speed);
+        }
+        window.addEventListener('touchstart', function (e) {
+            var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
+            startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
+            //starty = parseInt(touchobj.clientY) // get x position of touch point relative to left edge of browser
+            //statusdiv.innerHTML = 'Status: touchstart<br /> ClientX: ' + startx + 'px'
+            e.preventDefault()
+        }, false);
+        window.addEventListener('touchmove', function (e) {
+             e.preventDefault()
+        }, false);
+        window.addEventListener('touchend', function (e) {
+            var touchobj = e.changedTouches[0] // reference first touch point for this event
+            //var distX = parseInt(touchobj.clientX) - startx;
+            //var distY = parseInt(touchobj.clientY) - starty;
+            var distX = parseInt(touchobj.clientX) ;
+            if (distX > width/2) {
+                right();
+            }
+            if (distX < width/2) {
+                left();
+            }
+            startx = parseInt(touchobj.clientX);
+            e.preventDefault()
+        }, false);
+
+
+        gamestart();
+
+
+
+    </script>
+    <div style="display: none;"><img src="http://img.users.51.la/17401000.asp"/></div>
+</body>
+</html>
